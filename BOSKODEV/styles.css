@@ -970,3 +970,290 @@ body.visual-mode .cta-section {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; }
 }
+
+/* =========================
+   AJUSTES FORTES DE MOBILE
+   ========================= */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6, a, span, strong, li, button {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+@media (max-width: 860px) {
+  .page-content,
+  .section-shell,
+  .footer,
+  .navbar {
+    width: calc(100% - 16px);
+    max-width: 100%;
+  }
+
+  .nav-container {
+    gap: 12px;
+    padding: 0 12px;
+  }
+
+  .nav-logo {
+    min-width: 0;
+    max-width: calc(100% - 60px);
+  }
+
+  .nav-logo div {
+    min-width: 0;
+  }
+
+  .logo-text,
+  .logo-subtext {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .logo-subtext {
+    font-size: 0.72rem;
+    line-height: 1.2;
+  }
+
+  .hero-page {
+    padding: 124px 0 64px;
+  }
+
+  .hero-content {
+    gap: 24px;
+  }
+
+  .hero-title {
+    line-height: 0.95;
+  }
+
+  .hero-support,
+  .section-text {
+    line-height: 1.6;
+  }
+
+  .hero-device,
+  .contact-card,
+  .play-card,
+  .value-card,
+  .package-card,
+  .testimonial-card,
+  .service-showcase,
+  .ux-challenge-stage,
+  .cta-section {
+    border-radius: 22px;
+  }
+
+  .hero-device,
+  .contact-card,
+  .play-card,
+  .value-card,
+  .package-card,
+  .testimonial-card,
+  .service-showcase,
+  .ux-challenge-stage {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .service-panel-copy,
+  .ux-bad-content,
+  .good-ui .ux-good-content,
+  .bad-ui .ux-bad-content {
+    padding: 18px;
+  }
+
+  .service-panel img {
+    min-height: 220px;
+  }
+
+  .stack-card-floating {
+    width: min(260px, 72%);
+  }
+
+  .contact-card {
+    padding: 24px 16px;
+  }
+
+  .contact-email,
+  .testimonial-author,
+  .testimonial-author a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .scroll-to-top {
+    right: 14px;
+    bottom: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --container: calc(100vw - 16px);
+    --radius: 22px;
+    --radius-sm: 16px;
+  }
+
+  .navbar {
+    top: 8px;
+    border-radius: 18px;
+  }
+
+  .nav-container {
+    min-height: 74px;
+  }
+
+  .logo-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+  }
+
+  .logo-text {
+    font-size: 0.95rem;
+  }
+
+  .logo-subtext {
+    display: none;
+  }
+
+  .nav-menu {
+    width: 100%;
+    max-width: 100%;
+    right: 0;
+  }
+
+  .hero-page {
+    min-height: auto;
+    padding: 116px 0 56px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 11vw, 3.2rem);
+    margin-bottom: 12px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+  }
+
+  .hero-support {
+    margin-top: 16px;
+    font-size: 0.98rem;
+  }
+
+  .hero-actions,
+  .hero-metrics,
+  .value-cards,
+  .packages-grid,
+  .testimonials-grid,
+  .playground-grid,
+  .services-layout,
+  .service-panel,
+  .tabs-nav,
+  .choice-group,
+  .play-buttons,
+  .ux-bad-actions,
+  .ux-good-actions,
+  .ux-challenge-controls {
+    grid-template-columns: 1fr !important;
+    flex-direction: column;
+  }
+
+  .metric-card,
+  .value-card,
+  .package-card,
+  .testimonial-card,
+  .play-card {
+    padding: 18px;
+  }
+
+  .hero-device {
+    padding: 14px;
+    border-radius: 24px;
+  }
+
+  .hero-device::before,
+  .cta-section::before,
+  .package-glow,
+  .ambient {
+    opacity: 0.45;
+    filter: blur(28px);
+  }
+
+  .screen-stack {
+    gap: 12px;
+  }
+
+  .stack-card-main {
+    aspect-ratio: 16 / 11;
+  }
+
+  .stack-card-floating {
+    width: min(220px, 76%);
+    margin-right: 0;
+  }
+
+  .section-block {
+    padding: 72px 0;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 9vw, 2.6rem);
+    line-height: 1.02;
+  }
+
+  .service-showcase {
+    min-height: auto;
+    padding: 14px;
+  }
+
+  .service-panel-copy h3,
+  .hero-screen-copy h2,
+  .ux-good-title,
+  .ux-bad-title {
+    line-height: 1.12;
+  }
+
+  .micro-btn,
+  .choice-btn,
+  .tab-btn,
+  .ux-good-btn,
+  .ux-bad-btn,
+  .ux-reset-btn,
+  .btn,
+  .contact-email {
+    width: 100%;
+  }
+
+  .contact-card {
+    width: 100%;
+    padding: 22px 14px;
+  }
+
+  .testimonial-author {
+    font-size: 0.92rem;
+  }
+
+  .footer {
+    padding-bottom: 28px;
+    font-size: 0.9rem;
+  }
+}
