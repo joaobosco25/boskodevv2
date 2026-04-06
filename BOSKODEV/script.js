@@ -258,4 +258,21 @@ document.addEventListener('DOMContentLoaded', () => {
     goodUI?.classList.remove('active');
     badUI?.classList.add('active');
   });
+
 });
+
+const themeToggle = document.getElementById('themeToggle');
+const demoThemeCard = document.getElementById('demoThemeCard');
+const toggleLabel = document.getElementById('toggleLabel');
+
+if (themeToggle && demoThemeCard && toggleLabel) {
+  themeToggle.addEventListener('click', () => {
+    demoThemeCard.classList.toggle('light-mode');
+
+    const isLightMode = demoThemeCard.classList.contains('light-mode');
+
+    themeToggle.setAttribute('aria-pressed', String(isLightMode));
+    toggleLabel.textContent = isLightMode ? 'Modo Claro' : 'Modo Escuro';
+  });
+}
+
