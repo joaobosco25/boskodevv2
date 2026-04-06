@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BoskoDev - Web Development Studio</title>
+  <meta name="description" content="Consultoria, desenvolvimento web e experiências digitais com presença visual, clareza e microinterações que valorizam a marca.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo-180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/logo-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/logo-512.png">
+
+  <meta property="og:title" content="BoskoDev - Web Development Studio">
+  <meta property="og:description" content="Consultoria, desenvolvimento web e experiências digitais com presença visual, clareza e microinterações que valorizam a marca.">
+  <meta property="og:image" content="assets/logo-social.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seudominio.com.br/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BoskoDev - Web Development Studio">
+  <meta name="twitter:description" content="Consultoria, desenvolvimento web e experiências digitais com presença visual, clareza e microinterações que valorizam a marca.">
+  <meta name="twitter:image" content="assets/logo-social.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="intro-lock">
+  <div id="intro" class="intro" aria-hidden="false">
+    <div class="intro-noise"></div>
+    <div class="intro-vignette"></div>
+    <div class="intro-center">
+      <img src="assets/logo.jpeg" alt="Logo BoskoDev" class="intro-logo">
+      <p class="intro-tag">BOSKODEV EXPERIENCE</p>
+      <h1 class="intro-title">Clique para acender a interface</h1>
+      <button id="powerSwitch" class="intro-button" type="button">Entrar no site</button>
+    </div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <div id="siteShell" class="site-shell">
+    <div class="ambient ambient-1"></div>
+    <div class="ambient ambient-2"></div>
+    <div class="ambient ambient-3"></div>
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <img src="assets/logo.jpeg" alt="Logo BoskoDev" class="logo-img">
+          <div>
+            <strong class="logo-text">BoskoDev</strong>
+            <span class="logo-subtext">Web Development Studio</span>
+          </div>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link active">Início</a>
+          <a href="#services" class="nav-link">Serviços</a>
+          <a href="#testimonials" class="nav-link">Clientes</a>
+          <a href="#playground" class="nav-link">Importância dos Detalhes</a>
+          <a href="#ux-challenge" class="nav-link">UX Challenge</a>
+          <a href="#contact" class="nav-link">Contato</a>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="page hero-page">
+      <div class="hero-backdrop"></div>
+      <div class="hero-grid"></div>
+      <div class="page-content hero-content">
+        <div class="hero-copy reveal" data-reveal="left">
+          <p class="eyebrow">DESIGN, CÓDIGO E EXPERIÊNCIA</p>
+          <h1 class="hero-title">Vamos ser Digitais!</h1>
+          <p class="hero-subtitle">CONSULTORIA, DESENVOLVIMENTO WEB PRA VOCÊ.</p>
+          <p class="hero-support">Não vamos tocar na sua essência. Nossa proposta é construir presença digital, clareza de comunicação e uma entrega visual viva, forte e memorável.</p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary magnetic">VAMOS CONVERSAR!</a>
+            <a href="#playground" class="btn btn-secondary magnetic">Ver microinterações</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card reveal" data-reveal="up" data-delay="100">
+              <strong>UI forte</strong>
+              <span>Camadas, profundidade e impacto visual.</span>
+            </div>
+            <div class="metric-card reveal" data-reveal="up" data-delay="180">
+              <strong>UX clara</strong>
+              <span>Hierarquia, leitura rápida e menos ruído.</span>
+            </div>
+            <div class="metric-card reveal" data-reveal="up" data-delay="260">
+              <strong>Motion</strong>
+              <span>Movimento com propósito, não enfeite.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-reveal="right">
+          <div class="hero-device parallax-layer" data-speed="0.12">
+            <div class="hero-device-top">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="hero-device-body">
+              <div class="hero-screen-copy">
+                <p class="screen-kicker">BOSKODEV / FRONT-END EXPERIENCE</p>
+                <h2>VISUAL PREMIUM</h2>
+                <p>O objetivo aqui não é trocar sua marca. É elevar a percepção dela.</p>
+              </div>
+              <div class="screen-stack">
+                <div class="stack-card stack-card-main">
+                  <img src="assets/vscode.avif" alt="Tela de código" />
+                </div>
+                <div class="stack-card stack-card-floating">
+                  <img src="assets/code.jpg" alt="Código BoskoDev" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#services" class="scroll-indicator" aria-label="Descer para serviços">
+        <span>Scroll</span>
+        <i></i>
+      </a>
+    </header>
+
+    <section class="value-section section-block">
+      <div class="section-shell">
+        <div class="section-heading reveal" data-reveal="up">
+          <p class="eyebrow">BASE ESTRATÉGICA</p>
+          <h2 class="section-title">Perguntas Frequentes</h2>
+        </div>
+
+        <div class="value-cards cinematic-grid">
+          <article class="value-card glass-card reveal" data-reveal="up" data-delay="0">
+            <span class="card-index">01</span>
+            <h3>PORQUE TER UM WEBSITE SE JÁ TENHO INSTAGRAN?</h3>
+            <p>Porque rede social é vitrine emprestada. O site é endereço próprio. Nas redes, você depende de algoritmo. No site, você controla sua marca, sua oferta, seus contatos, seus argumentos de venda e sua captação. Em um mercado cada vez mais digitalizado, pequenos negócios que investem em presença digital estão mais preparados para competir e crescer.</p>
+          </article>
+          <article class="value-card glass-card reveal" data-reveal="up" data-delay="120">
+            <span class="card-index">02</span>
+            <h3>TER UM SITE, REALMENTE AJUDA A VENDER MAIS?</h3>
+            <p>Ajuda porque reduz atrito na decisão. O consumidor pesquisa, compara e quer clareza antes de comprar. Dados recentes do Google mostram que a jornada é híbrida e que a pesquisa virou etapa indispensável na decisão de compra. Quando o cliente encontra seu site com informações claras, ele avança mais rápido.</p>
+          </article>
+          <article class="value-card glass-card reveal" data-reveal="up" data-delay="240">
+            <span class="card-index">03</span>
+            <h3>O QUE UM SITE FAZ, QUE A REDE SOCIAL NÃO FAZ BEM?</h3>
+            <p>Organiza proposta de valor, ranqueia melhor em buscas, captura leads, permite páginas específicas por serviço, integra botão de WhatsApp, formulário, catálogo, mapa, depoimentos e métricas. Além disso, ele te dá base para anunciar e medir desempenho com mais precisão. O Google vem destacando a importância crescente de medição e otimização no marketing digital atual.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="page services-page section-block">
+      <div class="section-shell services-shell">
+        <div class="section-heading reveal" data-reveal="left">
+          <p class="eyebrow">O QUE OFERECEMOS</p>
+          <h2 class="section-title">O que oferecemos?</h2>
+        </div>
+
+        <div class="services-layout">
+          <div class="services-buttons reveal" data-reveal="left" id="serviceButtons">
+            <button class="service-btn active" data-service="consultoria">CONSULTORIA TOTAL</button>
+            <button class="service-btn" data-service="programador">PROGRAMADOR PARTICULAR</button>
+            <button class="service-btn" data-service="correcao">CORREÇÃO DE CÓDIGO</button>
+            <button class="service-btn" data-service="mobile">DESENVOLVIMENTO MOBILE</button>
+            <button class="service-btn" data-service="suporte">SUPORTE 24H</button>
+          </div>
+
+          <div class="service-showcase reveal" data-reveal="right">
+            <div class="service-panel active" id="service-consultoria">
+              <div class="service-panel-copy">
+                <p class="service-kicker">Consultoria total</p>
+                <h3>Diagnóstico, direção e execução para transformar presença digital em resultado.</h3>
+                <p>Uma entrega para quem não quer só um site bonito, mas uma estrutura mais clara, profissional e orientada à percepção de valor.</p>
+              </div>
+              <img src="assets/code.jpg" alt="Consultoria total BoskoDev">
+            </div>
+            <div class="service-panel" id="service-programador">
+              <div class="service-panel-copy">
+                <p class="service-kicker">Programador Particular</p>
+                <h3>Suporte próximo para quem quer ajustar ou tirar uma ideia do papel.</h3>
+                <p>Você não fica travado sozinho no código. O objetivo é reduzir dúvida, encurtar caminho e acelerar execução.</p>
+              </div>
+              <img src="assets/vscode.avif" alt="Programador particular BoskoDev">
+            </div>
+            <div class="service-panel" id="service-correcao">
+              <div class="service-panel-copy">
+                <p class="service-kicker">Correção de código</p>
+                <h3>Leitura técnica, ajustes estruturais e refinamento visual sem destruir sua proposta.</h3>
+                <p>Perfeito para quem já tem algo rodando, mas sabe que a interface ou a lógica ainda não transmite confiança.</p>
+              </div>
+              <img src="assets/17d6f6df-cdc3-4505-8549-6aabf8a2246f.png" alt="Correção de código BoskoDev">
+            </div>
+            <div class="service-panel" id="service-mobile">
+              <div class="service-panel-copy">
+                <p class="service-kicker">Desenvolvimento mobile</p>
+                <h3>Interfaces adaptadas para o celular com melhor sensação de fluidez, toque e leitura.</h3>
+                <p>A experiência mobile deixa de ser “versão menor do desktop” e passa a ser parte central da entrega.</p>
+              </div>
+              <img src="assets/ChatGPT Image 27 de fev. de 2026, 14_35_00.png" alt="Desenvolvimento mobile BoskoDev">
+            </div>
+            <div class="service-panel" id="service-suporte">
+              <div class="service-panel-copy">
+                <p class="service-kicker">Suporte 24h</p>
+                <h3>Amparo contínuo para mudanças, dúvidas e manutenção de uma presença digital viva.</h3>
+                <p>Quando o problema aparece, a resposta não precisa parecer improvisada. A ideia é manter consistência e segurança.</p>
+              </div>
+              <img src="assets/logo-social.jpg" alt="Suporte BoskoDev">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages-section section-block">
+      <div class="section-shell">
+        <div class="section-heading reveal" data-reveal="up">
+          <p class="eyebrow">PACOTES</p>
+          <h2 class="section-title">Nossos Pacotes</h2>
+          <p class="section-text">Escolha a melhor opção para o desenvolvimento digital do seu projeto.</p>
+        </div>
+
+        <div class="packages-grid cinematic-grid">
+          <article class="package-card reveal" data-reveal="up" data-delay="0">
+            <div class="package-glow"></div>
+            <h3>PORTFÓLIO</h3>
+            <ul>
+              <li>Um Website (estático) ou Landing Page</li>
+              <li><strong>3</strong> consultorias e alterações após a finalização do código (08:00 às 18:00)</li>
+              <li>Sem Banco de Dados</li>
+              <li>Marca da desenvolvedora <strong>"BoskoDev"</strong> no rodapé</li>
+            </ul>
+          </article>
+          <article class="package-card reveal" data-reveal="up" data-delay="120">
+            <div class="package-glow"></div>
+            <h3>BÁSICO</h3>
+            <ul>
+              <li>Um Website (estático) ou Landing Page</li>
+              <li><strong>8</strong> consultorias e alterações após a finalização do código (08:00 às 18:00)</li>
+              <li>Sem Banco de Dados</li>
+              <li>Suporte com a publicação no site</li>
+              <li>Marca da desenvolvedora <strong>"BoskoDev"</strong> no rodapé</li>
+            </ul>
+          </article>
+          <article class="package-card featured reveal" data-reveal="up" data-delay="240">
+            <div class="package-glow"></div>
+            <span class="featured-badge">Mais completo</span>
+            <h3>BEST-ALL</h3>
+            <ul>
+              <li>Um Website (estático ou dinâmico) ou Landing Page</li>
+              <li><strong>20</strong> consultorias e alterações após a finalização do código (24H)</li>
+              <li>Com Banco de Dados</li>
+              <li>Suporte com a publicação no site</li>
+              <li>Marca da desenvolvedora <strong>"BoskoDev"</strong> no rodapé <strong>OPCIONAL</strong></li>
+              <li>Suporte personalizado a qualquer hora do dia, com resposta humana em até 5 min</li>
+              <li>Auxílio com outros códigos, sendo websites, database, aplicação ou landing page.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="page testimonials-page section-block">
+      <div class="section-shell">
+        <div class="section-heading reveal" data-reveal="up">
+          <p class="eyebrow">PROVA SOCIAL</p>
+          <h2 class="section-title">Últimos Clientes</h2>
+        </div>
+
+        <div class="testimonials-grid cinematic-grid">
+          <article class="testimonial-card reveal" data-reveal="up" data-delay="0">
+            <p class="testimonial-text">"João, parabéns pelo seu trabalho! Fiquei muito satisfeito com o resultado da landing page e com seu atendimento."</p>
+            <p class="testimonial-author">PEDRO SILVA - CEO, <a href="https://auge7.com.br" target="_blank" rel="noreferrer">AUGE7</a></p>
+          </article>
+          <article class="testimonial-card reveal" data-reveal="up" data-delay="120">
+            <p class="testimonial-text">aguardando</p>
+            <p class="testimonial-author">MAURÍCIO MOISÉS - COORDENADOR, <a href="https://www.efaseg.com.br" target="_blank" rel="noreferrer">EFASEG - CENTRO DE FORMAÇÃO DE VIGILANTES</a></p>
+          </article>
+          <article class="testimonial-card reveal" data-reveal="up" data-delay="240">
+            <p class="testimonial-text">Excelente. Aceita ideia, minha liberdade criativa foi total. Conseguiu colocar no site, tudo que pedi e exatament da maneira que pedi. Captou minha excencia e dos meus eventos.</p>
+            <p class="testimonial-author">DJ ALEX - ARTISTA, DJ E FUNDADOR <a href="https://djalexs.com.br/" target="_blank" rel="noreferrer">SATISPHASOM</a></p>
+          </article>
+        </div>
+
+        <div class="cta-section reveal" data-reveal="up">
+          <div class="cta-copy">
+            <p class="eyebrow">CHAMADA FINAL</p>
+            <h2 class="cta-title">Deixe sua marca no mundo digital!</h2>
+          </div>
+          <a href="#contact" class="btn btn-primary magnetic">VAMOS CONVERSAR!</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="playground" class="playground-section section-block">
+      <div class="section-shell">
+        <div class="section-heading reveal" data-reveal="up">
+          <p class="eyebrow">TESTE ANTES DE CONTRATAR</p>
+          <h2 class="section-title">Playground de Microinterações</h2>
+          <p class="section-text">Pequenos detalhes, tornam uma interface mais viva, clara e profissional para seu negócio. Tomamos a liberdade, de fazer essa seção interativa, com <strong>ALGUMAS</strong> pequenas funções e animações, para que você cliente, teste, antes de contratar e veja, por si só, a diferença. Esses detalhes, são os que diferem um site estático de um site vivo e chamativo.</p>
+        </div>
+
+        <div class="playground-grid cinematic-grid">
+          <article class="play-card reveal" data-reveal="up">
+            <h3>Botões interativos</h3>
+            <p>Hover, pressão e feedback visual no clique.</p>
+            <div class="play-demo play-buttons">
+              <button class="micro-btn fill">Botão 1</button>
+              <button class="micro-btn ghost">Botão 2</button>
+            </div>
+          </article>
+
+          <article class="play-card reveal" data-reveal="up" data-delay="80">
+            <h3>Toggle elegante</h3>
+            <p>Interação simples, útil e visualmente agradável.</p>
+            <div class="play-demo">
+              <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+                <span class="toggle-track">
+                  <span class="toggle-thumb"></span>
+                </span>
+                <span class="toggle-label">Modo Claro ou Escuro</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="play-card reveal" data-reveal="up" data-delay="160">
+            <h3>Accordion</h3>
+            <p>Conteúdo expansível sem poluir a interface.</p>
+            <div class="play-demo accordion-group">
+              <div class="accordion-item active">
+                <button class="accordion-trigger" type="button" aria-expanded="true">
+                  O que isso melhora?
+                  <span>+</span>
+                </button>
+                <div class="accordion-content">
+                  <p>Organização, legibilidade e experiência do usuário em páginas mais densas.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" type="button" aria-expanded="false">
+                  Funciona no mobile?
+                  <span>+</span>
+                </button>
+                <div class="accordion-content">
+                  <p>Sim. Esse tipo de componente é ótimo para reduzir rolagem excessiva em telas menores.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="play-card reveal" data-reveal="up" data-delay="240">
+            <h3>Tabs</h3>
+            <p>Troca rápida de conteúdo com hierarquia clara.</p>
+            <div class="play-demo tabs-demo">
+              <div class="tabs-nav" role="tablist" aria-label="Demonstração de tabs">
+                <button class="tab-btn active" type="button" role="tab" aria-selected="true" data-tab="tab1">UI</button>
+                <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="tab2">UX</button>
+                <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="tab3">Performance</button>
+              </div>
+
+              <div class="tabs-content">
+                <div class="tab-panel active" id="tab1" role="tabpanel">Interfaces visuais bonitas, consistentes e modernas.</div>
+                <div class="tab-panel" id="tab2" role="tabpanel">Experiências simples, intuitivas e orientadas à conversão.</div>
+                <div class="tab-panel" id="tab3" role="tabpanel">Interações leves e fluidas.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="play-card reveal" data-reveal="up" data-delay="320">
+            <h3>Card com efeito premium</h3>
+            <p>Movimento sutil para destacar valor sem exagero, clique em ualquer parte dele e faça o teste.</p>
+            <div class="play-demo">
+              <div class="tilt-card" id="tiltCard">
+                <span class="tilt-badge">Front-end</span>
+                <h4>Interface com presença</h4>
+                <p>Microdetalhes que melhoram percepção de qualidade.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="contact-page section-block">
+      <div class="section-shell contact-shell">
+        <div class="contact-card reveal" data-reveal="up">
+          <p class="eyebrow">CONTATO</p>
+          <h2 class="section-title">Dúvidas?</h2>
+          <a href="mailto:boskodev@hotmail.com" class="contact-email magnetic">boskodev@hotmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 BoskoDev - Web Development Studio - Todos os direitos reservados.</p>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollTopButton" type="button" aria-label="Voltar ao topo">↑</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
