@@ -635,7 +635,15 @@ button { font: inherit; }
 .packages-grid,
 .testimonials-grid,
 .playground-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.packages-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.testimonials-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .value-card,
 .package-card,
@@ -769,7 +777,7 @@ button { font: inherit; }
   background: radial-gradient(circle, rgba(255,86,194,.2), transparent 70%);
   filter: blur(20px);
 }
-.playground-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.playground-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .play-card { min-height: 260px; }
 .play-demo { margin-top: 18px; }
 .play-buttons,
